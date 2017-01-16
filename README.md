@@ -1,6 +1,6 @@
 # smartMirror
 Raspberry Pi powered smart mirror + configuration web page
-*Currently looking into NYTimes API request header bug
+**Currently looking into NYTimes API request header bug**
 
 Made with very simple HTML+ CSS +JS + PHP stack
 A simple fullscreen webpage behind a one way mirror (or in my case Ikea picture frame with a one way film squeegeed on)
