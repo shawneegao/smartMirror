@@ -1,0 +1,191 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Smart Mirror Config Form</title> 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/components.min.css">
+    <!--Online Style Sheets-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"></script>
+    <!--JQuery Library-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src = "assets/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!--Customizable script-->
+	<script type="text/javascript" src="js/configScript.js"></script>
+   
+    
+</head> 
+<body class = "configBackground">
+<div class = "containter-fluid">
+	<div class="row" id="main_row">
+        <div class="caption font-red-sunglo">
+            <i class="icon-settings font-red-sunglo"></i>
+            <span class="caption-subject bold uppercase configTitle"> Smart Mirror Configuration </span>
+         </div>
+		<div class ="col-lg-9 form-body">
+			<div class="form-body">
+                <div class="form-group form-md-line-input">
+                    <h2>Name:</h2>
+                    <!--<label class="col-sm-3 control-label configField">Name</label>-->
+                    <div class="configInput">
+                        <input type="text" class="form-control" placeholder="" id = "name">
+                        <div class="form-control-focus"> </div>
+                    </div>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <label class="col-sm-3 control-label configField">5 Digit USA ZIP Code</label>
+                    <div class="configInput">
+                        <input type="text" class="form-control" id ="zip" placeholder="">
+                        <div class="form-control-focus"> </div>
+                    </div>
+                </div>
+                <div class="form-group form-md-checkboxes">
+                    <h2>Select some subjects you'd be interested to see on your News Feed:</h2>
+                    <!--<div class="configField">Select some subjects you'd be interested to see on your News Feed: </div>-->
+                    <div class="col-sm-9">
+                        <div class = "row">
+                            <div class = "col-sm-3">
+                                <div class="md-checkbox-list">
+                                    <div class="md-checkbox">
+                                        <input type="checkbox" value="world" id="world" class="md-check">
+                                        <label for="world">
+                                            <span class="check"></span>
+                                            <span class="box"></span> World </label>
+                                    </div>
+                                    <div class="md-checkbox">
+                                        <input type="checkbox" value="national" id="national" class="md-check">
+                                        <label for="national">
+                                            <span class="check"></span>
+                                            <span class="box"></span> National </label>
+                                    </div>
+                                    <div class="md-checkbox">
+                                        <input type="checkbox" value="politics" id="politics" class="md-check">
+                                        <label for="politics">
+                                            <span class="check"></span>
+                                            <span class="box"></span> Politics </label>
+                                    </div>
+                                    <div class="md-checkbox">
+                                        <input type="checkbox" value="business" id="business" class="md-check">
+                                        <label for="business">
+                                            <span class="check"></span>
+                                            <span class="box"></span> Business </label>
+                                    </div>
+                                    <div class="md-checkbox">
+                                        <input type="checkbox" value="travel" id="technology" class="md-check">
+                                        <label for="technology">
+                                            <span class="check"></span>
+                                            <span class="box"></span> Travel </label>
+                                    </div>
+                                    <div class="md-checkbox">
+                                        <input type="checkbox" value="science" id="science" class="md-check">
+                                        <label for="science">
+                                            <span class="check"></span>
+                                            <span class="box"></span> Science </label>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class = "col-sm-3">
+                                    <div class="md-checkbox-list">
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" value="sports" id="sports" class="md-check">
+                                            <label for="sports">
+                                                <span class="check"></span>
+                                                <span class="box"></span> Sports </label>
+                                        </div>
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" value="health" id="health" class="md-check">
+                                            <label for="health">
+                                                <span class="check"></span>
+                                                <span class="box"></span> Health </label>
+                                        </div>
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" value="dining" id="dining" class="md-check">
+                                            <label for="dining">
+                                                <span class="check"></span>
+                                                <span class="box"></span> Dining </label>
+                                        </div>
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" value="technology" id="travel" class="md-check">
+                                            <label for="travel">
+                                                <span class="check"></span>
+                                                <span class="box"></span> Technology </label>
+                                        </div>
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" value="fashion" id="fashion" class="md-check">
+                                            <label for="fashion">
+                                                <span class="check"></span>
+                                                <span class="box"></span> Fashion </label>
+                                        </div>
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" value="realestate" id="realestate" class="md-check">
+                                            <label for="realestate">
+                                                <span class="check"></span>
+                                                <span class="box"></span> Real Estate </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "col-sm-3">
+                                    <div class="md-checkbox-list">
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" value="none" id="none" class="md-check">
+                                            <label for="none">
+                                                <span class="check"></span>
+                                                <span class="box"></span> NO NEWS </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end of check box list -->
+            </div>
+			<!--end of check form body -->
+		</div>
+       <!-- <h2 style="margin-left: 30px;">Select your city:</h2>
+        <div id="city_select_wrapper" style="margin-left: 50px;"> </div>-->
+        <div class ="submitWrapper">
+        <button id ="submitConfigs" class="btn blue" data-toggle="#basic"> Set Up My Smart Mirror! </button>
+        <!--checkbox warning modal-->
+        <div class="modal fade setConfig" id="checkWarning" tabindex="-1" role="basic" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" deluminate_imagetype="png"></button>
+                        <h4 class="modal-title font-red-sunglo">Form Incomplete!</h4>
+                    </div>
+                    <div class="modal-body"> Please make sure that all fields of the configuration form is correctly completed!</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn dark btn-outline" data-dismiss="modal">Got it!</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!--submit modal-->
+        <div class="modal fade setConfig" id="basic" tabindex="-1" role="basic" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" deluminate_imagetype="png"></button>
+                        <h4 class="modal-title font-red-sunglo">Your Smart Mirror is Configured!</h4>
+                    </div>
+                    <div class="modal-body"> Now your mirror is customized! Feel Free to change this form whenever you like. </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn dark btn-outline" data-dismiss="modal">Got it!</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        </div>
+	</div>
+</div> 
+</body>
+</html>

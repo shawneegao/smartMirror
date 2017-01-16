@@ -1,0 +1,85 @@
+body{
+    overflow-x:hidden;
+}
+.greeting_text{
+	text-align: center;
+	color: white;
+}
+
+.clock
+{
+	padding-top: 25px
+}
+
+.clock_display{
+	padding-right:20px;
+	text-align:right;
+	color: white;
+	font-size: 200%;
+}
+.weather-wrapper{
+	padding-right:20px;
+	text-align:left;
+	color:white;
+	position: absolute;
+	bottom: 10px;
+	right: 30px;
+    
+}
+.weather-today{
+	font-size:200%;
+}
+.weather{
+	font-size:x-large;
+}
+.screen{
+	margin-left:0px;
+	margin-right:0px;
+}
+.calendar_display{
+	color: white;
+	font-size: xx-large;
+}
+.calendar_content_font{
+	color:white;
+	font-size:20pt;
+}
+.weatherIcon
+{
+    display: none;
+    position: absolute;
+	bottom: 140px;
+	right: 10px;
+    height: 12%;
+}
+.newsFeed{
+    color: white;
+    padding: 10px;
+    height:inherit;
+    overflow:hidden;
+}
+.feedLabel{
+    font-weight:bold;
+    text-align:center;
+    font-size:xx-large;
+}
+.article{
+    padding: 10px;
+}
+.newsTitle{
+    font-weight:bold;
+}
+.newsAbstract{
+    
+}
+.col-lg-6,
+.col-lg-3
+{
+	height: 100%;
+    color: white;
+}
+
+.col-lg-6
+{
+	background-color: rgba(255, 255, 255, 0.2);
+}

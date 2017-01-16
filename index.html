@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Smart Mirror</title> 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+    <meta name="robots" content="index, follow" /> 
+    <meta name="author" content="$author" /> 
+    <meta name="description" content="$description" /> 
+    <link rel="shortcut icon" href="favicon.png" /> 
+	
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Online Style Sheets-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--JQuery Library-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src = "assets/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <!--Customizable script-->
+	<script type="text/javascript" src="js/script.js"></script>
+   
+    
+</head> 
+<body>
+<div class = "containter-fluid">
+	<div class="row " id="main_row">
+		<div class ="col-lg-3">
+        <div class = "feedLabel">News Feed</div>
+			<div class = "newsFeed"></div>
+		</div>
+		<div class = "col-lg-6">
+			<div class = "greeting">
+				<div class = "greetingText"></div> 
+			</div>
+		</div>
+        <div class = "feed"></div>
+		<div class = "col-lg-3">
+			<div class = "clock">	
+				<div class = "clock_display">
+					<div id = "date"></div>
+					<div id = "time"></div>
+				</div>
+			</div>
+           
+            <div class = "weather weather-wrapper">
+                <div class="weatherIcon"></div>
+                <div class = "weather-today temp"></div>
+                <div class = "weather temp_location"></div>
+                <div class = "weather temp_max"></div>
+                <div class = "weather temp_min"></div>
+                <div class = "row future">
+                    <div class = "col-sm-5">
+                    </div>
+                    <div class = "col-sm-7">
+                        <div class = "col-sm-4 noPad">
+                            <div class = "day1Label paddedTemp smallFont"></div>
+                            <div class = "day2Label paddedTemp smallFont"></div>
+                            <div class = "day3Label paddedTemp smallFont"></div>
+                            <div class = "day4Label paddedTemp smallFont"></div>
+                            <div class = "day5Label paddedTemp smallFont"></div>
+                        </div>
+                        <div class = "col-sm-4 noPad">
+                            <div class="weatherIcon1"></div>
+                            <div class="weatherIcon2"></div>
+                            <div class="weatherIcon3"></div>
+                            <div class="weatherIcon4"></div>
+                            <div class="weatherIcon5"></div>
+                        </div>
+                        <div class = "col-sm-4 noPad">
+                            <div class = "day1 paddedTemp"></div>
+                            <div class = "day2 paddedTemp"></div>
+                            <div class = "day3 paddedTemp"></div>
+                            <div class = "day4 paddedTemp"></div>
+                            <div class = "day5 paddedTemp"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+		</div>
+	</div>
+</div> 
+</body>
+</html>
